@@ -6,6 +6,7 @@
   
 header{
     background-color:  black;
+    width: 100%;
     position: sticky;
     top: 0;
 }
@@ -19,12 +20,17 @@ a{
     text-decoration: none;
 }
 
-h2 {
-    border-bottom: 2px solid #ddd;
+.hero {
+    color: white;
+    background-color: black;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .navbar{
     min-height: 70px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,24 +46,16 @@ h2 {
     color: rgb(192, 192, 192);
 }
 
-.nav-item { 
-    width: 100%;
-}
-
 .nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-}
-
-.nav-link{
-    transition: 0.3s ease-out;
+    margin-right: 20px;
 }
 
 .nav-link:hover{
-    font-size-adjust: .7;
-    padding: none;
+    font-weight: 600;
 }
 
 .hamburger{
@@ -95,8 +93,6 @@ section {
 }
 
 .introduction {
-    color: white;
-    background-color: black;
     display: flex;
     height: 80vh;
     gap: 1vh;
@@ -104,6 +100,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .introduction h1 {
@@ -114,14 +111,23 @@ section {
     font-size: 2rem;
 }
 
+.portrait-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portrait-section p {
+    max-width: 400px;
+}
+
 .social-icons {
     display: flex;
     gap: 20px;
-}
-
-.about-me {
-    background-color: gray;
-    gap: 2rem;
 }
 
 .portrait {
@@ -134,11 +140,10 @@ section {
     align-items: center;
 }
 
-@media(max-width:1024px){
+@media(max-width:1135px){
     .hamburger{
         display: block;
     }
-
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -147,6 +152,10 @@ section {
     }
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .introduction h1 {
+        font-size: 4rem;
     }
 
     .nav-menu{
@@ -166,6 +175,27 @@ section {
 
     .nav-menu.active{
         top: 70px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .introduction {
+        height: 20vh;
+    }
+}
+
+@media(max-width: 580px) {
+    .introduction h1 {
+        font-size: 2rem;
+    }
+    .introduction {
+        height: 20vh;
+    }
+
+    .introduction p {
+        font-size: 20px;
     }
 }
 
