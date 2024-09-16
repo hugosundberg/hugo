@@ -25,7 +25,7 @@ a{
     background-color: black;
     padding-top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .navbar{
@@ -101,6 +101,7 @@ section {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    grid-column-start: 2;
 }
 
 .introduction h1 {
@@ -225,8 +226,8 @@ section {
 
     .nav-menu{
         position: fixed;
-        top: -300px;
-        gap: 0;
+        top: -400px;
+        gap: 10;
         flex-direction: column;
         background-color: black;
         width: 100%;
