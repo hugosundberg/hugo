@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+h2 {
+    border-bottom: 2px solid #ddd;
+}
+
 .navbar{
     min-height: 70px;
     display: flex;
@@ -91,6 +95,8 @@ section {
 }
 
 .introduction {
+    color: white;
+    background-color: black;
     display: flex;
     height: 80vh;
     gap: 1vh;
