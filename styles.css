@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
   
 header{
@@ -11,7 +13,7 @@ header{
     top: 0;
 }
 
-li{
+.navbar li{
     list-style: none;
 }
 
@@ -104,7 +106,7 @@ section {
 }
 
 .introduction h1 {
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 .introduction p {
@@ -134,10 +136,14 @@ section {
     height: 30vh;
 }
 
-.education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.education ul{
+    text-align: left;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.education li {
+    padding: 5px;
 }
 
 .portfolio-section {
@@ -155,10 +161,13 @@ section {
     transition: 0.3s;
     border-radius: 10px;
     width: 400px;
+    background-color: white;
 }
 
 .card-image {
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 80%;
 }
 
 .card:hover {
@@ -167,9 +176,24 @@ section {
   }
   
 .container {
-    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 
+.skills-section {
+    height: 20vh;
+}
+.skills-section ul {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.skills-section li {
+    padding: 5px;
+}
 
 #primary{
     li{
@@ -251,16 +275,26 @@ section {
     }
 }
 
-@media(max-width: 620px) {
+@media(max-width: 635px) {
     .introduction h1 {
         font-size: 2rem;
     }
     .introduction {
-        height: 20vh;
+        height: 25vh;
+        padding: 0;
     }
-
     .introduction p {
         font-size: 20px;
+    }
+    .portrait {
+        height: 20vh;
+        padding-bottom: 20px;
+    }
+    .portrait-section {
+        height: 30vh;
+        gap: 0;
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
 
