@@ -100,6 +100,19 @@ section {
     text-align: center;
 }
 
+.introduction h1 {
+    font-size: 7rem;
+}
+
+.introduction p {
+    font-size: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
 .about-me {
     background-color: gray;
     gap: 2rem;
