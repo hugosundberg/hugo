@@ -11,6 +11,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 .navbar li{
@@ -162,6 +163,7 @@ section {
     border-radius: 10px;
     width: 400px;
     background-color: white;
+    position: relative;
 }
 
 .card-image {
@@ -178,8 +180,16 @@ section {
 .container {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     padding: 30px;
+}
+.card a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .skills-section {
@@ -234,7 +244,7 @@ section {
         display: block;
     }
     .card {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
