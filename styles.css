@@ -56,10 +56,6 @@ a{
     margin-right: 20px;
 }
 
-.nav-link:hover{
-    font-weight: 600;
-}
-
 .hamburger{
     display: none;
     cursor: pointer;
@@ -147,13 +143,17 @@ section {
 }
 
 .portfolio-section {
+    overflow: auto;
     background-color:rgb(223, 223, 223);
 }
 
 .portfolio-cards {
+    overflow: auto;
+    white-space: nowrap;
+    white-space: nowrap;
     display: flex;
     gap: 40px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -227,7 +227,16 @@ section {
         }
       }
     }
-  }
+}
+
+@media (max-width: 1370px) {
+    .portfolio-cards {
+        display: block;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
 
 @media(max-width: 1135px) {
     .hamburger{
@@ -273,6 +282,8 @@ section {
     .introduction {
         height: 20vh;
     }
+
+ 
 }
 
 @media(max-width: 635px) {
@@ -296,7 +307,11 @@ section {
         padding: 0;
         padding-bottom: 20px;
     }
-}
+    .card {
+        scale: 0.9;
+    }
+   
+}   
 
 .footer {
     background-color: black;
