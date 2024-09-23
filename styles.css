@@ -56,7 +56,6 @@ a{
     align-items: center;
     gap: 60px;
     margin-right: 20px;
-    padding-bottom: 40px;
 }
 
 .hamburger{
@@ -185,7 +184,9 @@ section {
     position: relative;
     align-items: center;
     padding: 30px;
+    gap: 10px;
 }
+
 .card a {
     position: absolute;
     top: 0;
@@ -285,6 +286,7 @@ section {
 
     .nav-menu.active{
         top: 70px;
+        padding-bottom: 40px;
     }
 
     .hero {
