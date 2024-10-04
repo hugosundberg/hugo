@@ -133,15 +133,28 @@ section {
 .portrait {
     height: 30vh;
 }
-
-.education ul{
-    text-align: left;
-    padding-top: 10px;
-    font-size: 20px;
+.education-section {
+    padding: 20px;
 }
 
-.education li {
-    padding: 5px;
+.education-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.education-card img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.education-card p {
+    margin-top: 10px;
+}
+
+.education-card-content {
+    padding-top: 30px;
+    text-align: left;
 }
 
 .portfolio-section {
@@ -234,6 +247,51 @@ section {
 
 .skill-card img {
     height: 60px;
+}
+
+.contact-section {
+    height: 100vh;
+}
+
+.email-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.email-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.email-form input[type="text"], 
+.email-form input[type="email"], 
+.email-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.email-form input[type="submit"]:hover {
+    background-color: #218838;
 }
 
 #primary{

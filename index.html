@@ -62,12 +62,26 @@
         </section>
         <!-- Education section -->
         <section>
-            <div class="education">
+            <div class="education-section">
                 <h2>EDUCATION</h2>
-                <ul>
-                    <li>Lund University</li>
-                    <li>Berklee College of Music</li>
-                </ul>
+                <div class="education-card">
+                    <img src="/imgs/Lunds_universitet.png" alt="Lund University logo">
+                    <div class="education-card-content">
+                        <h2>Bachelor of Science in Information Systems </h2>
+                        <p><strong>Lund University</strong></p>
+                        <p>2021-2024</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <img src="/imgs/berklee.png" alt="Berklee College of Music logo">
+                    <div class="education-card-content">
+                        <h2>Music Production & Engineering</h2>
+                        <p><strong>Berklee College of Music in Boston</strong></p>
+                        <p>2017-2019</p>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Portfolio section -->
@@ -173,9 +187,23 @@
                     <p>Google Dev</p>
                 </div>
             </div>
+        </section>
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <div class="email-form">
+                <form action="submit_email.php" method="POST">
 
 
-
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+        
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
         </section>
     </div>
     <!-- Footer -->
