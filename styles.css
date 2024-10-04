@@ -226,6 +226,12 @@ section {
     color: black;
 }
 
+.skill-card:hover {
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+
+}
+
 .skill-card img {
     height: 60px;
 }
