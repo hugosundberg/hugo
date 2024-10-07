@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -390,10 +396,23 @@ section {
         height: 20vh;
     }
 
+    .skill-card {
+        height: 30px;
+    }
+
+    .skill-card p {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
  
 }
 
 @media(max-width: 635px) {
+
     .introduction h1 {
         font-size: 2rem;
     }
@@ -416,6 +435,10 @@ section {
     }
     .card {
         scale: 0.9;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
     }
    
 }   
