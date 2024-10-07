@@ -276,6 +276,10 @@ section {
 
 }
 
+.email-form p {
+    padding-bottom: 20px;
+}
+
 .email-form input[type="text"], 
 .email-form input[type="email"], 
 .email-form textarea {
@@ -440,6 +444,29 @@ section {
     .skills-container {
         grid-template-columns: 1fr;
     }
+
+    .skill-card {
+        margin: 10px;
+    }
+
+    .education-card {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-top: 20px;
+    }
+
+    .education-card h2 {
+        font-size: 20px;
+    }
+
+    .education-card-content {
+        padding: 0;
+    }
+
+    .email-form {
+        max-width: 80%;
+    }
+  
    
 }   
 
