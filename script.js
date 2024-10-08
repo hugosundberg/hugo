@@ -4,8 +4,6 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-
-  console.log("works");
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
