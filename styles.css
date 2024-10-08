@@ -453,8 +453,8 @@ section {
         padding: 0;
         padding-bottom: 20px;
     }
-    .card {
-        scale: 0.9;
+    .portfolio-cards {
+        gap: 0px;
     }
 
     .skills-container {
@@ -491,7 +491,6 @@ section {
     color: #f2f2f2;
     text-align: center;
     padding: 10px;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
