@@ -137,6 +137,13 @@ section {
     gap: 20px;
 }
 
+.filter-white {
+    margin-top: 4px;
+    margin-right: 4px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(42deg) brightness(102%) contrast(101%);
+}
+
 .portrait {
     height: 30vh;
 }
