@@ -22,6 +22,17 @@ header{
     z-index: 3;
 }
 
+.dark-light-mode-toggle {
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dark-light-icon {
+    height: 34px;
+}
+
 .navbar li{
     list-style: none;
 }
