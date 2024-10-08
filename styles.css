@@ -172,7 +172,6 @@ section {
 }
 
 .portfolio-section {
-    overflow: auto;
     background-color:rgb(223, 223, 223);
 }
 
@@ -180,7 +179,8 @@ section {
     overflow: auto;
     white-space: nowrap;
     white-space: nowrap;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     padding: 20px;
 }
@@ -353,9 +353,15 @@ section {
     }
 }
 
+@media (max-width: 1790px) {
+    .portfolio-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media (max-width: 1370px) {
     .portfolio-cards {
-        display: block;
+        grid-template-columns: 1fr 1fr;
     }
     .card {
         margin-bottom: 40px;
@@ -420,7 +426,9 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 
- 
+    .portfolio-cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media(max-width: 635px) {
