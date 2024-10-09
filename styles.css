@@ -13,6 +13,10 @@ body, html {
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
+
+h2 {
+    font-size: 40px;
+}
   
 header{
     width: 100%;
@@ -31,6 +35,12 @@ header{
 
 .dark-light-icon {
     height: 34px;
+}
+
+.toggle-and-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 
 .navbar li{
@@ -102,7 +112,7 @@ input:checked + .slider:before {
 }
 
 .hero {
-    padding-top: 0;
+    padding-top: 10px;
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -231,6 +241,10 @@ section {
     flex-direction: row;
 }
 
+.education-card h2 {
+    font-size: 30px;
+}
+
 .education-card img {
     width: 120px;
     margin-right: 20px;
@@ -257,7 +271,7 @@ section {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.475);
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.275);
     transition: 0.3s;
     border: white solid 10px;
     border-radius: 10px;
@@ -273,7 +287,7 @@ section {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
     scale: 1.02;
   }
   
@@ -298,10 +312,6 @@ section {
     padding-bottom: 100px;
 }
 
-.skills-section h2 {
-    font-size: 40px;
-}
-
 .skills-container {
     padding: 20px;
     display: grid;
@@ -314,13 +324,13 @@ section {
     align-items: center;
     padding: 20px;
     font-size: 20px;
-    border: black solid 1px;
     border-radius: 20px;
     width: 180px;
     margin: 20px;
     gap: 15px;
     background-color: white;
     color: black;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.275);
 }
 
 .skill-card:hover {
@@ -338,10 +348,13 @@ section {
 }
 
 .email-form {
-    padding: 20px;
+    margin-top: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     width: 600px;
+    background-color: rgb(4, 1, 40);
+    color: white
 }
 
 .email-form label {
@@ -432,6 +445,9 @@ section {
     .card {
         margin-bottom: 40px;
     }
+    .nav-menu {
+        gap: 10px;
+    }
 }
 
 @media(max-width: 1135px) {
@@ -499,6 +515,13 @@ section {
 
 @media(max-width: 635px) {
 
+    .logo {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    .toggle-and-menu {
+        gap: 10px;
+    }
     .introduction h1 {
         font-size: 2rem;
     }
