@@ -22,7 +22,7 @@ header{
     z-index: 3;
 }
 
-.dark-light-mode-toggle {
+.toggle {
     max-height: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,31 +79,29 @@ a{
     transition: .4s;
 }
   
-  input:checked + .slider {
+input:checked + .slider {
     background-color: #2196F3;
-  }
+}
   
-  input:focus + .slider {
+input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 34px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
 .hero {
-    color: white;
     padding-top: 0;
     margin-top: 70px;
     display: grid;
@@ -209,10 +207,13 @@ section {
     gap: 20px;
 }
 
-.filter-white {
+.github-logo {
     margin-top: 4px;
     margin-right: 4px;
     height: 40px;
+}
+
+.white-filter {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(42deg) brightness(102%) contrast(101%);
 }
 
@@ -244,10 +245,6 @@ section {
     text-align: left;
 }
 
-.portfolio-section {
-    background-color:rgb(4, 1, 40);
-}
-
 .portfolio-cards {
     overflow: auto;
     white-space: nowrap;
@@ -260,7 +257,7 @@ section {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.475);
     transition: 0.3s;
     border: white solid 10px;
     border-radius: 10px;
@@ -338,7 +335,6 @@ section {
 
 .contact-section {
     height: 100vh;
-    color: white;
 }
 
 .email-form {
@@ -352,8 +348,6 @@ section {
     display: block;
     font-size: 20px;
     margin-bottom: 8px;
-    color: white;
-
 }
 
 .email-form p {
