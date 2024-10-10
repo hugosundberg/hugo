@@ -37,7 +37,7 @@ header{
     height: 34px;
 }
 
-.toggle-and-menu {
+.logo-and-toggle {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -489,7 +489,10 @@ section {
 
     .nav-menu.active{
         top: 70px;
+        gap: 40px;
+        padding-top: 40px;
         padding-bottom: 40px;
+        background-color: rgba(4, 1, 40);
     }
 
     .hero {
@@ -527,7 +530,7 @@ section {
         padding: 15px;
         font-size: 1.2rem;
     }
-    .toggle-and-menu {
+    .logo-and-toggle {
         gap: 10px;
     }
     .introduction h1 {
