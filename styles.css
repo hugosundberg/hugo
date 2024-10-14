@@ -524,6 +524,10 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 
+    .portfolio-card-content {
+        padding-bottom: 50px;
+    }
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
