@@ -451,11 +451,7 @@ section {
 
 @media (max-width: 1370px) {
     .portfolio-card {
-        scale: 0.95;
-    }
-
-    .portfolio-container {
-        gap: 0;
+        width: 540px;
     }
    
     .nav-menu {
@@ -563,12 +559,17 @@ section {
         padding-bottom: 20px;
     }
     .portfolio-container {
-        gap: 0px;
+        gap: 20px;
     }
 
     .portfolio-card {
-        width: 500px;
-        scale: 0.8;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .card-image {
+        top: 0;
+        margin-inline: 30px;
     }
 
     .portfolio-card:hover {
