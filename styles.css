@@ -276,7 +276,7 @@ section {
     white-space: nowrap;
     white-space: nowrap;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding: 20px;
     color: black;
@@ -465,6 +465,19 @@ section {
         }
       }
     }
+}
+
+/* ABOUT ME */
+
+.about-me-content {
+    border: 2px white solid;
+    text-align: left;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    max-width: 1000px;
+    line-height: 1.8;
 }
 
 /* RESPONSIVENESS STYLES */
