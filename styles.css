@@ -213,6 +213,7 @@ section {
 
 .portrait-section p {
     max-width: 330px;
+    line-height: 1.5;
 }
 
 .social-icons {
@@ -341,6 +342,8 @@ section {
     left: 0;
     width: 100%;
 }
+
+
 
 /* SKILLS STYLES */
 .skills-section {
